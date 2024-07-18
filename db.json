@@ -5,62 +5,69 @@
         "name":"Kichimba Mkomani",
         "role_rank": "CS Transport",
         "phonenumber": 7182345,
-        "reaonForExpose":"Public funds embezzlement, corruption, and questionable integrity",
-        "poster": "https://www.gstatic.com/tv/thumb/v22vodart/2157/p2157_v_v8_ab.jpg"
+        "reasonForExpose":"Public funds embezzlement, corruption, and questionable integrity",
+        "poster": "/suspectImages/kichimurko.png"
       },
       {
         "id": "2",
         "name":"Nakumaliza Sana",
         "role_rank": "CS Health",
         "phonenumber": 7223456,
-        "reaonForExpose":"Incompetent, corruption, and abuse of office",
-        "poster": "https://www.gstatic.com/tv/thumb/v22vodart/2157/p2157_v_v8_ab.jpg"
+        "reasonForExpose":"Incompetent, corruption, and abuse of office",
+        "poster": "/suspectImages/nakusana.png"
       },
       {
         "id": "3",
         "name":"Adele Dialo",
         "role_rank": "CS Defence",
         "phonenumber": 7123456,
-        "reaonForExpose":"Incompetent, unconstitutionally deployed the military service to monitor the peaceful protestors demonstrating against bad governance, and corruption",
-        "poster": "https://www.gstatic.com/tv/thumb/v22vodart/2157/p2157_v_v8_ab.jpg"
+        "reasonForExpose":"Incompetent, tribalism & neptism in place of work, unconstitutionally deployed the military service to monitor the peaceful protestors demonstrating against bad governance, and corruption",
+        "poster": "/suspectImages/adelediano.jpg "
       }, 
       {
         "id": "4",
         "name":"Mochungu Elikana",
         "role_rank": "CS Education",
         "phonenumber": 7223780,
-        "reaonForExpose":"Most incompetent cs of eductaion, failed to post sjs' teachers, corrupt and lacks integrity; caught on cameras distributing teacher's calling letters instead letting TSC do their work",
-        "poster": "https://www.gstatic.com/tv/thumb/v22vodart/2157/p2157_v_v8_ab.jpg"
+        "reasonForExpose":"Most incompetent cs of eductaion, failed to post sjs' teachers, corrupt and lacks integrity; caught on cameras distributing teacher's calling letters instead letting TSC do their work",
+        "poster": "/suspectImages/machungu.png"
       },
       {
-        "id": "6",
+        "id": "5",
         "name":"Wakili Saprano",
         "role_rank": "CS Interior",
         "phonenumber": 1223462,
-        "reaonForExpose":"Allegedly commanded police to use excessive force against anti-government protestors leading death and casualsities of of innocent people",
-        "poster": "https://www.gstatic.com/tv/thumb/v22vodart/2157/p2157_v_v8_ab.jpg"
+        "reasonForExpose":"Allegedly commanded police to use excessive force against anti-government protestors leading death and casualsities of of innocent people",
+        "poster": "/suspectImages/wakili.png"
       },
       {
-        "id": "7",
+        "id": "6",
         "name":"Josephine Mulia",
         "role_rank": "MP Masinga",
         "phonenumber": 7223409,
-        "reaonForExpose":"Failed to deliver to the people of Masinga, most corrupt MP with questionable integrity.",
-        "poster": "https://www.gstatic.com/tv/thumb/v22vodart/2157/p2157_v_v8_ab.jpg"
+        "reasonForExpose":"Failed to deliver to the people of Masinga, most corrupt MP with questionable integrity.",
+        "poster": "/suspectImages/mulia.png"
       },
       {
-        "id": "8",
+        "id": "7",
         "name":"Karau Mtundu",
         "role_rank": "Police officer",
         "phonenumber": 7890345,
-        "reaonForExpose":"PCorrupt, caught on cctv camera shooting live bullets at peaceful protestors, intimidating and assulting helpless citizens while demanding for bribe",
-        "poster": "https://www.gstatic.com/tv/thumb/v22vodart/2157/p2157_v_v8_ab.jpg"
+        "reasonForExpose":"Corrupt, caught on cctv camera shooting live bullets at peaceful protestors, intimidating and assulting helpless citizens while demanding for bribe",
+        "poster": "/suspectImages/killercop.png"
+      },{
+        "id": "8",
+        "name":"Kinami Isungwa",
+        "role_rank": "MP Kayuku Constituency ",
+        "phonenumber": 7890345,
+        "reasonForExpose":"Works to please his master instead of the electrolates, openely called peaceful protestors 'digital wankers', corrupt is his other name, among other inhuman dealings",
+        "poster": "/suspectImages/sungwa.png"
       },
       {
         "id": "9",
         "name":"Kipendo Kisengula",
         "role_rank": "Businessman",
         "phonenumber": 7117092,
-        "reaonForExpose":"FInvolved in unscrupulous business activies like gold scam, human trafficking among other unauthentic deals ",
-        "poster": "https://www.gstatic.com/tv/thumb/v22vodart/2157/p2157_v_v8_ab.jpg"
+        "reasonForExpose":"FInvolved in unscrupulous business activies like gold scam, human trafficking among other unauthentic deals ",
+        "poster": "/suspectImages/kitangula.png"
       }]}
