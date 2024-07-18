@@ -1,8 +1,30 @@
-// This part loads the DOM
 document.addEventListener("DOMContentLoaded", () => {
   // Fetch suspects data and display them to the screen for user to take action
   fetchSuspects();
+
+  // Add event listener to the contact form
+  const contactForm = document.getElementById("contact-form");
+  contactForm.addEventListener("submit", handleFormSubmit);
 });
+
+function handleFormSubmit(event) {
+  event.preventDefault(); // Prevent form from submitting
+
+  const ageSelect = document.getElementById("age");
+  const ageValue = ageSelect.value;
+
+  // Check if the selected age is below 16
+  if (ageValue === "0-15") {
+    alert("Sorry, you must be at least 16 years old to submit the form.");
+    return; // Stop the form submission
+  }
+
+  // Display thank you message
+  alert("Thank you, patriotic Kenyan!");
+
+  // Optionally, you can reset the form or perform any other actions here
+  event.target.reset();
+}
 
 // Function to fetch suspects data from the server
 function fetchSuspects() {
@@ -23,24 +45,24 @@ function displaySuspects(suspects) {
 
     // Set the inner HTML of the suspectCard with the suspect's data
     suspectCard.innerHTML = `
-        <div id="image-container">
-          <img id="poster" src="${suspect.poster}" alt="suspectKe Poster">
-        </div>
-        <label for="suspect-name">Name:</label>
-        <strong> <em><span id="name">${suspect.name}</span><br></em></strong>
-        <label for="suspect-role-rank">Role/Rank:</label>
-        <strong> <span id="role_rank">${suspect.role_rank}</span><br></strong>
-        <label for="suspect-phonenumber">Phone Number:</label>
-        <span id="phonenumber">${suspect.phonenumber}</span><br>
-        <label for="suspect-reasonForExpose">Reason for Expose:</label>
-        <em><span id="reasonForExpose">${suspect.reasonForExpose}</span><br></em>
-        <button class="report-button">Report</button>
-        <select id="action">
-          <option value="" disabled selected placeholder"DCI Action">DCI Action</option>
-          <option value="apprehended">Apprehended</option>
-          <option value="under_investigation">Under Investigation</option>
-          <option value="incarcerated">Incarcerated</option>
-        </select>
+          <div id="image-container">
+              <img id="poster" src="${suspect.poster}" alt="suspectKe Poster">
+          </div>
+          <label for="suspect-name">Name:</label>
+          <strong> <em><span id="name">${suspect.name}</span><br></em></strong>
+          <label for="suspect-role-rank">Role/Rank:</label>
+          <strong> <span id="role_rank">${suspect.role_rank}</span><br></strong>
+          <label for="suspect-phonenumber">Phone Number:</label>
+          <span id="phonenumber">${suspect.phonenumber}</span><br>
+          <label for="suspect-reasonForExpose">Reason for Expose:</label>
+          <em><span id="reasonForExpose">${suspect.reasonForExpose}</span><br></em>
+          <button class="report-button">Report</button>
+          <select id="action">
+              <option value="" disabled selected>DCI Action</option>
+              <option value="apprehended">Apprehended</option>
+              <option value="under_investigation">Under Investigation</option>
+              <option value="incarcerated">Incarcerated</option>
+          </select>
       `;
 
     card_wrapper.appendChild(suspectCard); // Add the suspectCard to the card-wrapper
