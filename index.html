@@ -8,12 +8,12 @@
     </head>
     <body>
         <header>
-            <h1>KenyansDoCare</h1>
+            <h1 class="tophead">KenyansDoCare</h1>
         </header>
         <nav id="navbar">
             <ul>
                 <li>
-                    <a href="#Home">Home</a>
+                    <a href="#home">Home</a>
                 </li>
                 <li>
                     <a href="#theExposed">The Exposed SuspectsKE</a>
@@ -22,32 +22,27 @@
                     <a href="#contact">Contact</a>
                 </li>
                 <li>
-                    <a href="#about us">About Us</a>
+                    <a href="#about">About Us</a>
                 </li>
             </ul>
         </nav>
         <main>
             <br>
             <br>
-            <section>
-                <h2>About KenyansDoCare</h2>
+            <section id="home">
+                <h3 class="tophead">About KenyansDoCare</h3>
                 <p>
-                    KenyansDoCare is a non-profit organisation that aims to raise awareness about the problems faced by the Kenyans, including poverty, 
+                    KenyansDoCare is a non-profit organisation that aims to raise awareness about the problems faced by Kenyans, including poverty, 
                 corruption, and social inequality.
                     <br>
                     We believe that every individual deserves equal opportunities and resources.
                 </p>
-                <h2>
-                    Our Vision
-                </h2>
+                <h2 class="tophead">Our Vision</h2>
                 <p>KenyansDoCare aims to create a more equitable, just, and compassionate society by working towards the following objectives:</p>
                 <ol>
-                    <li>Exposing any suspected person spaning from Politicians, Businessmen, Police Officers, and any other civil serva misusing public resources for personal gains</li>
-                    <li>
-                        Enhancing Justice by questiong the relevant authorities like DCI Kenya, NIS, Police Services, and all relevant agencies about the actions
-                 taken against the unfair activities in our nation
-                    </li>
-                    <li>Improving accountability of civial servant leaders</li>
+                    <li>Exposing any suspected person spaning from Politicians, Businessmen, Police Officers, and any other civil servant misusing public resources for personal gains</li>
+                    <li>Enhancing Justice by questioning the relevant authorities like DCI Kenya, NIS, Police Services, and all relevant agencies about the actions taken against unfair activities in our nation</li>
+                    <li>Improving accountability of civil servant leaders</li>
                     <li>Improving access to basic services and education</li>
                     <li>Eradicating Corruption</li>
                     <li>Promoting health and well-being among the population</li>
@@ -60,33 +55,148 @@
                     Call this number 07284828
                 </p>
             </section>
-            <section>
-                <h2>The Exposed SuspectsKE</h2>
+            <section id="theExposed">
+                <h2 class="tophead">The Exposed SuspectsKE</h2>
                 <div class="card-wrapper">
-                    <!---Form ids will be useful in JavaScript fetch, get actions as well as storing their data> -->
                     <form id="suspect-details">
                         <div id="image-container">
                             <img id="poster" src="" alt="suspectKe Poster">
                         </div>
-                        <label for="suspect-name" id="name">Name:</label>
-                        <br>
-                        <label for="suspect-role-rank" id="role_rank">Role Rank:</label>
-                        <br>
-                        <label for="suspect-phonenumber" id="phonenumber">Phone Number:</label>
-                        <br>
-                        <label for="suspect-reasonForExpose" id="reasonForExpose">Reason for Expose:</label>
-                        <br>
-                        <button id="report">Report</button>
-                        <button id="action">DCI Action</button>
+                        <div class="form-group">
+                            <label for="suspect-name" id="name">Name:</label>
+                            <input type="text" id="suspect-name">
+                        </div>
+                        <div class="form-group">
+                            <label for="suspect-role-rank" id="role_rank">Role Rank:</label>
+                            <input type="text" id="suspect-role-rank">
+                        </div>
+                        <div class="form-group">
+                            <label for="suspect-phonenumber" id="phonenumber">Phone Number:</label>
+                            <input type="text" id="suspect-phonenumber">
+                        </div>
+                        <div class="form-group">
+                            <label for="suspect-reasonForExpose" id="reasonForExpose">Reason for Expose:</label>
+                            <input type="text" id="suspect-reasonForExpose">
+                        </div>
+                        <div class="form-group">
+                            <button id="report" class="report-button">Report</button>
+                            <button id="action" class="report-button">DCI Action</button>
+                        </div>
                     </form>
                 </div>
+            </section>
+            <section id="contact">
+                <h2 class="tophead">Contact Us</h2>
+                <p>
+                    For more information or to report any issues, please contact us at:
+                </p>
+                <ul>
+                    <li>
+                        Email:
+                        <a href="mailto:info@kenyansdocare.com">info@kenyansdocare.com</a>
+                    </li>
+                    <li>Phone: 07284828</li>
+                </ul>
+                <p> Alternatively you can submit your suggestions or comments in the form below:</p>
+                <form>
+                    <div class="form-group">
+                        <label for="Username">Enter Username:</label>
+                        <input
+                            type="text"
+                            id="Username"
+                            name="Username"
+                            placeholder="Username"
+                            required
+                        >
+                    </div>
+                    <div class="form-group">
+                        <label for="Email">Enter Your Email:</label>
+                        <input
+                            type="email"
+                            id="Email"
+                            name="Email"
+                            placeholder="Your Email"
+                            required
+                        >
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Enter password</label>
+                        <input
+                            type="password"
+                            id="password"
+                            name="password"
+                            placeholder="Choose Password"
+                            required
+                        >
+                    </div>
+                    <div class="form-group">
+                        <p>Select Your Age:</p>
+                        <label for="option-1">0-15</label>
+                        <input
+                            type="radio"
+                            name="age"
+                            value="0-15"
+                            id="option-1"
+                        >
+                        <label for="option-2">16-24</label>
+                        <input
+                            type="radio"
+                            name="age"
+                            value="16-24"
+                            id="option-2"
+                        >
+                        <label for="option-3">25-44</label>
+                        <input
+                            type="radio"
+                            name="age"
+                            value="25-44"
+                            id="option-3"
+                        >
+                        <label for="option-4">45-54</label>
+                        <input
+                            type="radio"
+                            name="age"
+                            value="45-54"
+                            id="option-4"
+                        >
+                        <label for="option-5">54+</label>
+                        <input
+                            type="radio"
+                            name="age"
+                            value="54+"
+                            id="option-5"
+                        >
+                    </div>
+                    <div class="form-group">
+                        <label for="bio">Your Bio:</label>
+                        <textarea
+                            name="bio"
+                            id="bio"
+                            cols="30"
+                            rows="10"
+                        >Enter your bio</textarea>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Submit the form">
+                    </div>
+                </form>
             </section>
         </main>
         <nav id="footer">
             <footer>
-                <p>
-                    Copyright &#169; 2024 -KenyansDoCare 2024.  All Rights Reserved:   Designed by WaKipawa
-                </p>
+                <h3 class="tophead">Social Media</h3>
+                <ul>
+                    <li>
+                        <a href="https://www.facebook.com/KenyansDoCare/">Facebook</a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/KenyansDoCare/">Twitter</a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/kenyansdocare/">Instagram</a>
+                    </li>
+                </ul>
+                <p>Copyright &#169; 2024 - KenyansDoCare 2024. All Rights Reserved: Designed by WaKipawa</p>
             </footer>
         </nav>
         <script src="kenyansDoCare.js"></script>

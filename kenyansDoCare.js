@@ -1,6 +1,6 @@
-// Wait for the DOM to fully load before running the script
+// This part loads the DOM
 document.addEventListener("DOMContentLoaded", () => {
-  // Fetch suspects data and display them
+  // Fetch suspects data and display them to the screen for user to take action
   fetchSuspects();
 });
 
@@ -9,7 +9,7 @@ function fetchSuspects() {
   fetch("http://localhost:3000/suspectsKe") // Make a GET request to the server
     .then((response) => response.json()) // Parse the JSON from the response
     .then((suspects) => displaySuspects(suspects)) // Call displaySuspects with the parsed data
-    .catch((error) => console.error("Error fetching suspects:", error)); // Handle any errors that occur during the fetch
+    .catch((error) => console.error("Error fetching suspects:", error)); // Handles fetch-related errors
 }
 
 // Function to display the suspects data on the page
