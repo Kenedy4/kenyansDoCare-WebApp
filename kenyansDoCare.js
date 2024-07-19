@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Fetch suspects data and display them to the screen for user to take action
   fetchSuspects();
 
-  // Add event listener to the contact form
+  // Adding the submit event listener to the contact form
   const contactForm = document.getElementById("contact-form");
   contactForm.addEventListener("submit", handleFormSubmit);
 });
@@ -22,7 +22,7 @@ function handleFormSubmit(event) {
   // Display thank you message
   alert("Thank you, patriotic Kenyan!");
 
-  // Optionally, you can reset the form or perform any other actions here
+  // resetting the form after submission
   event.target.reset();
 }
 
@@ -45,30 +45,30 @@ function displaySuspects(suspects) {
 
     // Set the inner HTML of the suspectCard with the suspect's data
     suspectCard.innerHTML = `
-          <div id="image-container">
-              <img id="poster" src="${suspect.poster}" alt="suspectKe Poster">
-          </div>
-          <label for="suspect-name">Name:</label>
-          <strong> <em><span id="name">${suspect.name}</span><br></em></strong>
-          <label for="suspect-role-rank">Role/Rank:</label>
-          <strong> <span id="role_rank">${suspect.role_rank}</span><br></strong>
-          <label for="suspect-phonenumber">Phone Number:</label>
-          <span id="phonenumber">${suspect.phonenumber}</span><br>
-          <label for="suspect-reasonForExpose">Reason for Expose:</label>
-          <em><span id="reasonForExpose">${suspect.reasonForExpose}</span><br></em>
-          <button class="report-button">Report</button>
-          <select id="action">
-              <option value="" disabled selected>DCI Action</option>
-              <option value="apprehended">Apprehended</option>
-              <option value="under_investigation">Under Investigation</option>
-              <option value="incarcerated">Incarcerated</option>
-          </select>
-      `;
+      <div class="image-container">
+        <img class="poster" src="${suspect.poster}" alt="suspectKe Poster">
+      </div>
+      <label for="suspect-name">Name:</label>
+      <strong> <em><span class="name">${suspect.name}</span><br></em></strong>
+      <label for="suspect-role-rank">Role/Rank:</label>
+      <strong> <span class="role_rank">${suspect.role_rank}</span><br></strong>
+      <label for="suspect-phonenumber">Phone Number:</label>
+      <span class="phonenumber">${suspect.phonenumber}</span><br>
+      <label for="suspect-reasonForExpose">Reason for Expose:</label>
+      <em><span class="reasonForExpose">${suspect.reasonForExpose}</span><br></em>
+      <button class="report-button">Report</button>
+      <select class="action-select">
+        <option value="" disabled selected>DCI Action</option>
+        <option value="apprehended">Apprehended</option>
+        <option value="under_investigation">Under Investigation</option>
+        <option value="incarcerated">Incarcerated</option>
+      </select>
+    `;
 
     card_wrapper.appendChild(suspectCard); // Add the suspectCard to the card-wrapper
 
     const reportButton = suspectCard.querySelector(".report-button"); // Select the report button within the suspectCard
-    const actionSelect = suspectCard.querySelector("#action"); // Select the action select element within the suspectCard
+    const actionSelect = suspectCard.querySelector(".action-select"); // Select the action select element within the suspectCard
 
     // Add a click event listener to the report button
     reportButton.addEventListener("click", () => {
@@ -89,11 +89,11 @@ function displaySuspects(suspects) {
   });
 }
 
-// Function to return the number of suspect elements in the card-wrapper
-function getNumberOfSuspects() {
-  const card_wrapper = document.querySelector(".card-wrapper"); // Select the card-wrapper element
-  return card_wrapper.children.length; // Return the number of child elements within the card-wrapper
-}
+// // Function to return the number of suspect elements in the card-wrapper
+// function getNumberOfSuspects() {
+//   const card_wrapper = document.querySelector(".card-wrapper"); // Select the card-wrapper element
+//   return card_wrapper.children.length; // Return the number of child elements within the card-wrapper
+// }
 
 // Fetch suspects data on initial load
 fetchSuspects();

@@ -38,6 +38,7 @@ body {
   font-size: large;
   border-radius: 5%;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
 }
 
 #navbar:hover {
@@ -47,78 +48,78 @@ body {
 
 #navbar ul {
   list-style-type: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
 }
 
 #navbar li {
   border-right: 1px solid #bbb;
-  float: right;
-  margin-right: 25px;
-  margin-bottom: 25px;
-  margin-top: 25px;
+  padding: 10px 20px;
   background: #c4816d;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
   font-size: 1.2em;
   text-transform: uppercase;
-  font-size: larger;
-  display: block;
   color: white;
 }
 
 #navbar ul li a {
-  color: Black;
+  color: black;
   text-align: center;
-  padding: 14px 16px;
   text-decoration: none;
-  border-right: 0cqmax;
-  padding-right: 10px;
 }
 
 #navbar li:hover {
   background-color: rgb(135, 184, 159);
-  color: whitesmoke;
+  color: rgb(22, 0, 128);
+  cursor: pointer;
+  border-radius: 25%;
 }
 
 main {
-  flex-wrap: wrap;
-  justify-content: center;
+  width: 96%;
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  padding: 15px;
-  margin-left: 5%;
-  margin-right: 5%;
-}
-
-#poster {
-  /* height: 300px; */
-  object-fit: cover;
-  margin-top: 3px;
-  transition: transform 0.5s;
-  cursor: pointer;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
-  opacity: 70%;
-  width: 100%;
-  /* height: auto; */
 }
 
 .card-wrapper {
+  width: 94%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 15px 0;
+  margin: 15px 3%;
+}
+
+#suspect-details {
+  width: 30%;
+  margin: 10px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ccc;
+  height: auto;
 }
 
 .suspect-card {
-  flex: 1 1 calc(33.33% - 20px); /* Adjusting to take up a third of the row, minus some margin */
+  flex: 1 1 calc(33.33% - 20px);
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
   overflow: hidden;
-  margin: 10px; /* Adding margin to space the cards */
+  margin: 10px;
   padding: 10px;
   background: linear-gradient(257deg, #eee, #bbb);
   transition: transform 0.3s;
-  text-align: left; /* Adjust text alignment if needed */
-  box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
-  background-clip: padding-box;
-  /* height: 450px; */
+  text-align: left;
+  box-sizing: border-box;
+}
+
+.suspect-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 1px solid #ccc;
 }
 
 .suspect-card:hover {
@@ -132,8 +133,40 @@ main {
   border-radius: 5%;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
   margin-bottom: 12px;
+  text-align: center;
+  color: #000000;
+  font-size: larger;
 }
 
+#footer ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+#footer li {
+  border-right: 1px solid #bbb;
+  padding: 10px 20px;
+  background: #c4816d;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  font-size: 1.2em;
+  text-transform: uppercase;
+  color: white;
+}
+
+#footer ul li a {
+  color: black;
+  text-align: center;
+  text-decoration: none;
+}
+
+#footer li:hover {
+  background-color: rgb(135, 184, 159);
+  color: rgb(22, 0, 128);
+  cursor: pointer;
+  border-radius: 25%;
+}
 #footer p {
   color: black;
   text-align: center;
@@ -142,6 +175,7 @@ main {
 
 #footer:hover {
   cursor: pointer;
+  color: #a52e11;
 }
 
 #footer p:hover {
@@ -163,6 +197,7 @@ button {
 button:hover {
   background-color: #b438b4;
 }
+
 button.report-button {
   display: inline-block;
   margin-top: 10px;
@@ -188,9 +223,36 @@ select {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  /* transition: background-color 0.3s; */
 }
 
 select:hover {
   background-color: #b438b4;
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+.form-group label {
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#contact-form {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ccc;
+  padding: 20px;
+  width: 30%;
+  margin-left: 20px;
+  margin-bottom: 15px;
 }
