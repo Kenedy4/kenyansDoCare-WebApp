@@ -90,10 +90,10 @@ function displaySuspects(suspects) {
 }
 
 // Function to return the number of suspect elements in the card-wrapper
-function getNumberOfSuspects() {
-  const card_wrapper = document.querySelector(".card-wrapper"); // Select the card-wrapper element
-  return card_wrapper.children.length; // Return the number of child elements within the card-wrapper
-}
+// function getNumberOfSuspects() {
+//   const card_wrapper = document.querySelector(".card-wrapper"); // Select the card-wrapper element
+//   return card_wrapper.children.length; // Return the number of child elements within the card-wrapper
+// }
 
 // Fetch suspects data on initial load
 fetchSuspects();
