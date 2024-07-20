@@ -1,5 +1,9 @@
 # Assignment: Phase 1 Project
 
+# Presentation Slides
+
+https://docs.google.com/presentation/d/1tooRIUFG6c1p_DCXWFZ9YU1xqvydi6QqXUvWkljD6L0/edit#slide=id.p
+
 ## Project Overview
 
     For this phase 1 project, you're going build a Single Page Application (SPA). Your frontend will be built with HTML, CSS, and JavaScript and will communicate with a public API. The learning goals are
