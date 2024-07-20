@@ -46,7 +46,7 @@
         "role_rank": "MP Masinga",
         "phonenumber": 7223409,
         "reasonForExpose":"Failed to deliver to the people of Masinga, most corrupt MP with questionable integrity.",
-        "poster": "/suspectImages/mulia.jpeg"
+        "poster": "suspectImages/mulia.jpeg"
       },
       {
         "id": "7",
@@ -54,7 +54,7 @@
         "role_rank": "Police officer",
         "phonenumber": 7890345,
         "reasonForExpose":"Corrupt, caught on cctv camera shooting live bullets at peaceful protestors, intimidating and assulting helpless citizens while demanding for bribe",
-        "poster": "/suspectImages/killercop.png"
+        "poster": "suspectImages/killercop.png"
       },{
         "id": "8",
         "name":"Kinami Isungwa",

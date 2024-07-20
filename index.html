@@ -1,16 +1,17 @@
+<!--declarations of my document type-->
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="/kenyansDoCare.css">
+        <link rel="stylesheet" href="kenyansDoCare.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
         <title>Anguka Nayo</title>
     </head>
     <body>
-        <header>
-            <h1 class="tophead">KenyansDoCare</h1>
-        </header>
+        <!-- Navigation bar section -->
         <nav id="navbar">
+            <!-- <img id="logo" src="suspectImages/kenyansdocare.png" alt="logo"> -->
             <ul>
                 <li>
                     <a href="#home">Home</a>
@@ -29,9 +30,13 @@
                 </li>
             </ul>
         </nav>
+        <!-- Header section -->
+        <header>
+            <h1 class="tophead">KenyansDoCare</h1>
+        </header>
+        <!-- Start of main content section -->
         <main>
             <section id="home">
-                <h3 class="tophead">About KenyansDoCare</h3>
                 <p>
                     KenyansDoCare is a non-profit organisation seeking to address issues corruption, and social inequality, leading to low standards of living.
                     <br>
@@ -49,19 +54,8 @@
                     </q>
                     <em>-Martin Luther King, Jr.</em>
                 </p>
-                <h2 class="tophead">Our Vision</h2>
-                <p>KenyansDoCare aims to create a more equitable, just, and compassionate society by working towards the following objectives:</p>
-                <ol>
-                    <li>Exposing any suspected person spanning from Politicians, Businessmen, Police Officers, and any other civil servant misusing public resources for personal gains</li>
-                    <li>Enhancing Justice by questioning the relevant authorities like DCI Kenya, NIS, Police Services, and all relevant agencies about the actions taken against unfair activities in our nation</li>
-                    <li>Improving accountability of civil servant leaders</li>
-                    <li>Improving access to basic services and education</li>
-                    <li>Eradicating Corruption</li>
-                    <li>Promoting health and well-being among the population</li>
-                    <li>Strengthening social and economic ties</li>
-                    <li>Addressing poverty and inequality</li>
-                </ol>
             </section>
+            <!-- Section for Exposed SuspectsKE: displays infoamtion regarding the suspected civial servants and busunessmen with questionable integrity -->
             <section id="theExposed">
                 <h2 class="tophead">The Exposed SuspectsKE</h2>
                 <div class="card-wrapper">
@@ -90,88 +84,103 @@
                             </div>
                         </form>
                     </div>
-                    <!-- Repeat the suspect-card div for other suspects -->
                 </div>
             </section>
-            <section id="contact">
-                <h2 class="tophead">Contact Us</h2>
+        </main>
+        <!-- Footer section -->
+        <footer id="footer">
+            <div id="contact">
+                <div id="disc">
+                    <h2>Contact Us</h2>
+                    <ul>
+                        <li>
+                            Email:
+                            <a href="mailto:info@kenyansdocare.com">info@kenyansdocare.com</a>
+                        </li>
+                        <li>Phone: 07284828</li>
+                    </ul>
+                    <p>Alternatively you can submit your suggestions here ==></p>
+                </div>
+                <div id="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <label for="yourname">Enter Your Name:</label>
+                            <input
+                                type="text"
+                                id="username"
+                                name="username"
+                                placeholder="Your Name"
+                                required
+                            >
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <label for="Email">Enter Your Email:</label>
+                            <input
+                                type="email"
+                                id="Email"
+                                name="Email"
+                                placeholder="Your Email"
+                                required
+                            >
+                        </div>
+                        <div class="form-group">
+                            <label for="age">Select Your Age:</label>
+                            <select name="age" id="age" required>
+                                <option value="">Select Age Range</option>
+                                <option value="0-15">0-15</option>
+                                <option value="16-24">16-24</option>
+                                <option value="25-44">25-44</option>
+                                <option value="45-54">45-54</option>
+                                <option value="54+">54+</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="description">Describe the suspect:</label>
+                            <textarea
+                                name="description"
+                                id="description"
+                                cols="30"
+                                rows="5"
+                                placeholder="Describe what kind of harm you think the suspect is doing to endanger the public resources of Kenya. Mention their name and the unscrupulous issue. We will take it from there"
+                                required
+                            ></textarea>
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <input type="submit" value="Submit the form">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div id="copyright">
                 <p>
-                    For more information or to report any issues; for instance if you have credible information regarding someone you suspect is squandering Kenyan public resources;
+                    <small>This website is for educational purposes only. If you have any concerns or questions about the information provided, please contact us.</small>
                 </p>
+                <p>Copyright &#169; KenyansDoCare 2024 &nbsp &nbsp &nbsp &nbsp &nbsp All Rights Reserved: &nbsp &nbsp &nbsp &nbsp &nbsp Designed by WaKipawa</p>
+                <h3>Social Media Platforms</h3>
                 <ul>
                     <li>
-                        Email:
-                        <a href="mailto:info@kenyansdocare.com">info@kenyansdocare.com</a>
+                        <a href="https://www.facebook.com/KenyansDoCare/">
+                            <i class="fab fa-facebook"></i>
+                            Facebook
+                        </a>
                     </li>
-                    <li>Phone: 07284828</li>
+                    <li>
+                        <a href="https://X.com/KenyansDoCare/">
+                            <i class="fab fa-twitter"></i>
+                            Twitter
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/kenyansdocare/">
+                            <i class="fab fa-instagram"></i>
+                            Instagram
+                        </a>
+                    </li>
                 </ul>
-                <p>Alternatively you can submit your suggestions or comments in the form below:</p>
-                <form id="contact-form">
-                    <div class="form-group">
-                        <label for="yourname">Enter Your Name:</label>
-                        <input
-                            type="text"
-                            id="username"
-                            name="username"
-                            placeholder="Your Name"
-                            required
-                        >
-                    </div>
-                    <div class="form-group">
-                        <label for="Email">Enter Your Email:</label>
-                        <input
-                            type="email"
-                            id="Email"
-                            name="Email"
-                            placeholder="Your Email"
-                            required
-                        >
-                    </div>
-                    <div class="form-group">
-                        <label for="age">Select Your Age:</label>
-                        <select name="age" id="age" required>
-                            <option value="">Select Age Range</option>
-                            <option value="0-15">0-15</option>
-                            <option value="16-24">16-24</option>
-                            <option value="25-44">25-44</option>
-                            <option value="45-54">45-54</option>
-                            <option value="54+">54+</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="description">Describe the suspect:</label>
-                        <textarea
-                            name="description"
-                            id="description"
-                            cols="30"
-                            rows="5"
-                            placeholder="Describe what kind of harm you think the suspect is doing to endanger the public resources of Kenya. Mention their name and the unscrupulous issue. We will take it from there"
-                            required
-                        ></textarea>
-                    </div>
-                    <div class="form-group">
-                        <input type="submit" value="Submit the form">
-                    </div>
-                </form>
-            </section>
-        </main>
-        <footer id="footer">
-            <p>Copyright &#169; 2024 - KenyansDoCare 2024.  &nbsp &nbsp &nbsp &nbsp &nbsp  All Rights Reserved:  &nbsp &nbsp &nbsp &nbsp &nbsp   Designed by WaKipawa</p>
-            <h3>Social Media Platforms</h3>
-            <ul>
-                <li>
-                    <a href="https://www.facebook.com/KenyansDoCare/">Facebook</a>
-                </li>
-                &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
-                <li>
-                    <a href="https://X.com/KenyansDoCare/">X</a>
-                </li>
-                &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
-                <li>
-                    <a href="https://www.instagram.com/kenyansdocare/">Instagram</a>
-                </li>
-            </ul>
+            </div>
         </footer>
-        <script src="/kenyansDoCare.js"></script>
+        <script src="kenyansDoCare.js"></script>
     </body>
 </html>
