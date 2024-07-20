@@ -1,3 +1,4 @@
+/*sets rules for the entire body layout*/
 body {
   background: linear-gradient(280deg, #ff6790, #9f33);
   width: 96%;
@@ -8,7 +9,7 @@ body {
   margin-top: 15px;
   justify-content: center;
 }
-
+/*styles the headings*/
 .tophead {
   color: #fff;
   font-size: 2em;
@@ -30,7 +31,7 @@ body {
   color: greenyellow;
   cursor: pointer;
 }
-
+/*Addresses navigation bar*/
 #navbar {
   background: linear-gradient(78deg, #bbb 10%, #eee);
   width: 93%;
@@ -75,7 +76,7 @@ body {
   cursor: pointer;
   border-radius: 25%;
 }
-
+/*Defines the rules of the major parts of the page*/
 main {
   width: 96%;
   display: flex;
@@ -83,7 +84,7 @@ main {
   align-items: center;
   margin: 0 auto;
 }
-
+/*Captures-wrapper that spans the entire displays of the suspectsKE section*/
 .card-wrapper {
   width: 94%;
   display: flex;
@@ -92,7 +93,7 @@ main {
   margin: 15px 3%;
   margin: 0 auto;
 }
-
+/*for suspect details*/
 #suspect-details {
   width: 30%;
   margin: 10px;
@@ -103,7 +104,7 @@ main {
   border: 1px solid #ccc;
   height: auto;
 }
-
+/*styles the suspect card*/
 .suspect-card {
   flex: 1 1 calc(33.33% - 20px);
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
@@ -127,7 +128,7 @@ main {
 .suspect-card:hover {
   transform: scale(1.05);
 }
-
+/*styles buttons*/
 button {
   display: inline-block;
   margin-top: 10px;
@@ -159,7 +160,7 @@ button.report-button {
 button.report-button:hover {
   background-color: #b438b4;
 }
-
+/*Affects the button uppon selection*/
 select {
   display: inline-block;
   margin-top: 10px;
@@ -174,7 +175,7 @@ select {
 select:hover {
   background-color: #b438b4;
 }
-
+/* deals with the contact form details*/
 .form-group {
   margin-bottom: 10px;
   display: flex;
@@ -194,7 +195,7 @@ select:hover {
   border: 1px solid #ccc;
   border-radius: 4px;
 }
-
+/*styles the contact form */
 #contact-form {
   background-color: #fff;
   border-radius: 8px;
@@ -205,6 +206,7 @@ select:hover {
   margin-left: 20px;
   margin-bottom: 15px;
 }
+/* This styles the footer section from here downwards */
 #footer {
   background: linear-gradient(78deg, #bbb, #eee);
   color: #000;
