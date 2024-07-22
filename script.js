@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Function to fetch suspects data from the server
   function fetchSuspects() {
-    fetch("http://localhost:3000/suspectsKe") // Make a GET request to the server
+    fetch("https://suspectske.onrender.com") // Make a GET request to the server
       .then((response) => response.json()) // Parse the JSON from the response
       .then((suspects) => displaySuspects(suspects)) // Call displaySuspects with the parsed data
       .catch((error) => console.error("Error fetching suspects:", error)); // Handles fetch-related errors
