@@ -37,7 +37,11 @@ https://docs.google.com/presentation/d/1tooRIUFG6c1p_DCXWFZ9YU1xqvydi6QqXUvWkljD
             . Now that you have fired or started the server, click on the html folder `index.html' and then click on the "run" option at the top of the visual studio window.
             . This will launch the webapp on your browser and you should see something like this:
 
-![Click the link to view flatiron Movie Shop](suspectImages/systemscreenoutlook.png)
+![Click the link to view flatiron Movie Shop](public/suspectImages/systemscreenoutlook.png)
+
+Similarly, you can navigate the systment trough this link:
+https://kenyansdocare-webapp.netlify.app/ or https://kenedy4.github.io/kenyansDoCare-WebApp/
+My data is hosted through this link: https://exposed-6wql.onrender.com/suspectsKe
 
             . Interact with the system try to submit or report an incidence of corruption. You will get a nice response when you click submit or report.
 
